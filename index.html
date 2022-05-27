@@ -48,18 +48,18 @@
 
 		<main>
 			<!--Герой-->
-			<div class="overlay">
-				<section class="hero">
-					<div class="container">
-						<h1 class="hero-title">
-							Эффективные решения
-							<br />
-							для вашего бизнеса
-						</h1>
-						<button type="button" class="btn-order">Заказать услугу</button>
-					</div>
-				</section>
-			</div>
+
+			<section class="hero">
+				<div class="container">
+					<h1 class="hero-title">
+						Эффективные решения
+						<br />
+						для вашего бизнеса
+					</h1>
+					<button type="button" class="btn-order">Заказать услугу</button>
+				</div>
+			</section>
+
 			<!--Особенности работы-->
 
 			<section class="features section">
@@ -132,16 +132,60 @@
 							<p lang="en" class="position">Product Designer</p>
 							<ul class="social-links">
 								<li class="item">
-									<svg width="44" height="44" style="border-radius: 50%"></svg>
+									<a href="/" class="link">
+										<svg width="44" height="44" style="border-radius: 50%" class="icon">
+											<use
+												href="./images/sprite.svg#instagram"
+												width="20"
+												height="20"
+												x="12"
+												y="12"
+												fill="var(--sprite-color)"
+											></use>
+										</svg>
+									</a>
 								</li>
 								<li class="item">
-									<svg width="44" height="44" style="border-radius: 50%"></svg>
+									<a href="/" class="link">
+										<svg width="44" height="44" style="border-radius: 50%">
+											<use
+												href="./images/sprite.svg#twitter"
+												width="20"
+												height="20"
+												x="12"
+												y="12"
+												fill="var(--sprite-color)"
+											></use>
+										</svg>
+									</a>
 								</li>
 								<li class="item">
-									<svg width="44" height="44" style="border-radius: 50%"></svg>
+									<a href="/" class="link">
+										<svg width="44" height="44" style="border-radius: 50%">
+											<use
+												href="./images/sprite.svg#facebook"
+												width="20"
+												height="20"
+												x="12"
+												y="12"
+												fill="var(--sprite-color)"
+											></use>
+										</svg>
+									</a>
 								</li>
 								<li class="item">
-									<svg width="44" height="44" style="border-radius: 50%"></svg>
+									<a href="/" class="link">
+										<svg width="44" height="44" style="border-radius: 50%">
+											<use
+												href="./images/sprite.svg#linkedin"
+												width="20"
+												height="20"
+												x="12"
+												y="12"
+												fill="var(--sprite-color)"
+											></use>
+										</svg>
+									</a>
 								</li>
 							</ul>
 						</li>
@@ -171,22 +215,34 @@
 					<h2 class="title">Постоянные клиенты</h2>
 					<ul class="clients">
 						<li class="item">
-							<svg width="170" height="92" style="outline: 1px solid #afb1b8; border-radius: 4px"></svg>
+							<a href="/">
+								<svg width="170" height="92" style="outline: 1px solid var(--sprite-color); border-radius: 4px"></svg>
+							</a>
 						</li>
 						<li class="item">
-							<svg width="170" height="92" style="outline: 1px solid #afb1b8; border-radius: 4px"></svg>
+							<a href="/">
+								<svg width="170" height="92" style="outline: 1px solid var(--sprite-color); border-radius: 4px"></svg>
+							</a>
 						</li>
 						<li class="item">
-							<svg width="170" height="92" style="outline: 1px solid #afb1b8; border-radius: 4px"></svg>
+							<a href="/">
+								<svg width="170" height="92" style="outline: 1px solid var(--sprite-color); border-radius: 4px"></svg>
+							</a>
 						</li>
 						<li class="item">
-							<svg width="170" height="92" style="outline: 1px solid #afb1b8; border-radius: 4px"></svg>
+							<a href="/">
+								<svg width="170" height="92" style="outline: 1px solid var(--sprite-color); border-radius: 4px"></svg>
+							</a>
 						</li>
 						<li class="item">
-							<svg width="170" height="92" style="outline: 1px solid #afb1b8; border-radius: 4px"></svg>
+							<a href="/">
+								<svg width="170" height="92" style="outline: 1px solid var(--sprite-color); border-radius: 4px"></svg>
+							</a>
 						</li>
 						<li class="item">
-							<svg width="170" height="92" style="outline: 1px solid #afb1b8; border-radius: 4px"></svg>
+							<a href="/">
+								<svg width="170" height="92" style="outline: 1px solid var(--sprite-color); border-radius: 4px"></svg>
+							</a>
 						</li>
 					</ul>
 				</div>
@@ -201,13 +257,40 @@
 					Web
 					<span class="logo-endfoot">Studio</span>
 				</a>
-				<address>
-					<ul class="contacts-foot">
-						<li class="item contact-first">г. Киев, пр-т Леси Украинки, 26</li>
-						<li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-						<li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
-					</ul>
-				</address>
+				<div class="foot">
+					<address>
+						<ul class="contacts-foot">
+							<li class="item contact-first">г. Киев, пр-т Леси Украинки, 26</li>
+							<li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+							<li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+						</ul>
+					</address>
+					<div class="social">
+						<p class="social-text">присоединяйтесь</p>
+						<ul class="social-foot">
+							<li class="item">
+								<a href="/" class="link">
+									<svg width="44" height="44" style="background-color: var(--sprite-bgc); border-radius: 50%"></svg>
+								</a>
+							</li>
+							<li class="item">
+								<a href="/" class="link">
+									<svg width="44" height="44" style="background-color: var(--sprite-bgc); border-radius: 50%"></svg>
+								</a>
+							</li>
+							<li class="item">
+								<a href="/" class="link">
+									<svg width="44" height="44" style="background-color: var(--sprite-bgc); border-radius: 50%"></svg>
+								</a>
+							</li>
+							<li class="item">
+								<a href="/" class="link">
+									<svg width="44" height="44" style="background-color: var(--sprite-bgc); border-radius: 50%"></svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</footer>
 	</body>
