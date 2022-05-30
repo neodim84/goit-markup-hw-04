@@ -90,6 +90,7 @@ h1, h2, h3, p {
 .contacts {
         display: flex;
         margin-left: auto;
+        align-items: baseline;
 }
 
 .svg {
@@ -120,10 +121,6 @@ h1, h2, h3, p {
 .contacts .item + .item {
         margin-left: 50px;
 }
-
-/* .mail-svg:hover, .mail-svg:focus, .tel-svg:hover, .tel-svg:focus {
-        fill: var(--secondary-color);
-} */
 
 .header-cont {
         display: flex;
