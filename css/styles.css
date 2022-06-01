@@ -65,7 +65,7 @@ h1, h2, h3, p {
         display: flex;
 }
 
-.nav-links .link {
+.nav-link {
         display: block;
         padding: 32px 0;
 
@@ -74,23 +74,21 @@ h1, h2, h3, p {
         font-weight: 500;
         line-height: 1.14;
         letter-spacing: 0.02em;
-        
 }
 
-.nav-links .link:hover,
-.nav-links .link:focus,
-.nav-links .link.link-active {
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.link-active {
         color: var(--secondary-color);
 }
 
-.nav-links .item + .item {
+.nav-links .nav-item + .nav-item {
         margin-left: 50px;
 }
 
 .contacts {
         display: flex;
         margin-left: auto;
-        align-items: baseline;
 }
 
 .svg {
@@ -99,8 +97,9 @@ h1, h2, h3, p {
 }
 
 .cont-link {
-        display: block;
+        display: flex;
         padding: 32px 0;
+        align-items: center;
 
         color: var(--primary-text-color);
 
@@ -118,7 +117,7 @@ h1, h2, h3, p {
         fill: currentColor;
 }
 
-.contacts .item + .item {
+.contacts .cont-item + .cont-item {
         margin-left: 50px;
 }
 
@@ -206,10 +205,19 @@ h1, h2, h3, p {
 }
 
 .feature {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
         width: 270px;
         height: 120px;
         background-color: var(--secondary-bgc);
-        border-radius: 4px
+        border-radius: 4px;
+}
+
+.feature-svg {
+        width: 70px;
+        height: 70px;
 }
 
 .feature-card {
@@ -252,7 +260,7 @@ h1, h2, h3, p {
         display: flex;
 }
 
-.activity-list .item + .item {
+.activity-list .activity-item + .activity-item {
         margin-left: 30px;
 }
 
@@ -285,7 +293,7 @@ h1, h2, h3, p {
 }
 
 .team-text {
-        margin: 30px 0 16px 0;
+        padding-top: 30px;
         font-size: 16px;
         line-height: 1.19;
         text-align: center;
@@ -299,26 +307,46 @@ h1, h2, h3, p {
         font-weight: 500;
 }
 
+.social {
+        padding: 16px 0 30px 0;
+}
+
 .social-links {
         display: flex;
         justify-content: center;
-        margin-bottom: 30px;
 }
 
-.social-links .item + .item {
+.social-links .social-item + .social-item {
         margin-left: 10px;
 }
 
-.icon {
+.social-item {
         width: 44px;
         height: 44px;
+}
+
+.icon-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
         border-radius: 50%;
+}
+
+.icon {
+        width: 20px;
+        height: 20px;
         fill: var(--sprite-color);
+}
+
+.icon-link:hover,
+.icon-link:focus {
+        background-color: var(--secondary-color);
 }
 
 .icon-link:hover .icon,
 .icon-link:focus .icon {
-        background-color: var(--secondary-color);
         fill: var(--primary-color);
 }
 
@@ -328,26 +356,38 @@ h1, h2, h3, p {
         display: flex;
 }
 
-.clients .item + .item {
+.clients .client-item + .client-item {
         margin-left: 30px;
 }
 
-.clients .item {
+.client-item {
         width: 170px;
         height: 92px;
 }
 
-.client {
-        width: 170px;
-        height: 92px;
+.client-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
         outline: 1px solid var(--sprite-color);
         border-radius: 4px;
+}
+
+.client {
+        width: 106px;
+        height: 60px;
         fill: var(--sprite-color);
+}
+
+.client-link:hover,
+.client-link:focus {
+        outline: 1px solid var(--secondary-color);
 }
 
 .client-link:hover .client,
 .client-link:focus .client {
-        outline: 1px solid var(--secondary-color);
         fill: var(--secondary-color);
 }
 
@@ -401,11 +441,11 @@ h1, h2, h3, p {
         color: var(--secondary-color);
 }
 
-.social {
+.social-foot {
         margin-left: 70px;
 }
 
-.social-text{
+.social-text {
         margin-bottom: 20px;
         color: var(--primary-color);
 
@@ -414,24 +454,37 @@ h1, h2, h3, p {
         text-transform: uppercase;
 }
 
-.social-foot {
+.social-foot-links {
         display: flex;
 }
 
-.social-foot .item + .item {
+.social-foot-links .social-foot-item + .social-foot-item {
         margin-left: 10px;
 }
 
-.icon-foot {
+.social-foot-item {
         width: 44px;
         height: 44px;
+}
+
+.icon-flink {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
         border-radius: 50%;
         background-color: var(--sprite-bgc);
+}
+
+.icon-foot {
+        width: 20px;
+        height: 20px;
         fill: var(--primary-color);
 }
 
-.icon-flink:hover .icon-foot,
-.icon-flink:focus .icon-foot {
+.icon-flink:hover,
+.icon-flink:focus {
         background-color: var(--secondary-color);
 }
 /* Стили портфолио */
