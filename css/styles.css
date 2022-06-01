@@ -61,7 +61,7 @@ h1, h2, h3, p {
         align-items: center;
 }
 
-.nav-links {
+.nav-list {
         display: flex;
 }
 
@@ -82,11 +82,11 @@ h1, h2, h3, p {
         color: var(--secondary-color);
 }
 
-.nav-links .nav-item + .nav-item {
+.nav-list .nav-item + .nav-item {
         margin-left: 50px;
 }
 
-.contacts {
+.cont-list {
         display: flex;
         margin-left: auto;
 }
@@ -117,7 +117,7 @@ h1, h2, h3, p {
         fill: currentColor;
 }
 
-.contacts .cont-item + .cont-item {
+.cont-list .cont-item + .cont-item {
         margin-left: 50px;
 }
 
@@ -274,11 +274,11 @@ h1, h2, h3, p {
         background-color: var(--secondary-bgc);
 }
 
-.team {
+.team-list {
         display: flex;
 }
 
-.team .team-card + .team-card {
+.team-list .team-card + .team-card {
         margin-left: 30px;
 }
 
@@ -311,12 +311,12 @@ h1, h2, h3, p {
         padding: 16px 0 30px 0;
 }
 
-.social-links {
+.social-list {
         display: flex;
         justify-content: center;
 }
 
-.social-links .social-item + .social-item {
+.social-list .social-item + .social-item {
         margin-left: 10px;
 }
 
@@ -352,11 +352,11 @@ h1, h2, h3, p {
 
 /* Стили клиентов */
 
-.clients {
+.client-list {
         display: flex;
 }
 
-.clients .client-item + .client-item {
+.client-list .client-item + .client-item {
         margin-left: 30px;
 }
 
@@ -420,7 +420,7 @@ h1, h2, h3, p {
         color: var(--primary-color);
 }
 
-.contacts-foot {
+.cont-foot-list {
         font-style: normal;
 }
 
@@ -428,16 +428,16 @@ h1, h2, h3, p {
         color: var(--primary-color);
 }
 
-.contacts-foot .item + .item {
+.cont-foot-list .cont-foot-item + .cont-foot-item {
         margin-top: 9px;
 }
 
-.contacts-foot .link {
+.cont-foot-link {
         color: rgba(255, 255, 255, 0.6);
 }
 
-.contacts-foot .link:hover,
-.contacts-foot .link:focus {
+.cont-foot-link:hover,
+.cont-foot-link:focus {
         color: var(--secondary-color);
 }
 
@@ -454,11 +454,11 @@ h1, h2, h3, p {
         text-transform: uppercase;
 }
 
-.social-foot-links {
+.social-foot-list {
         display: flex;
 }
 
-.social-foot-links .social-foot-item + .social-foot-item {
+.social-foot-list .social-foot-item + .social-foot-item {
         margin-left: 10px;
 }
 
@@ -527,7 +527,7 @@ h1, h2, h3, p {
 
 /* Стили проектов */
 
-.projects {
+.project-list {
         display: flex;
         flex-wrap: wrap;
 
@@ -536,7 +536,7 @@ h1, h2, h3, p {
         text-align: left;
 }
 
-.projects .project-card {
+.project-list .project-card {
         margin: 0 30px 30px 0;
 }
 
